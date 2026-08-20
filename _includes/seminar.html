@@ -1,0 +1,9 @@
+<article class="seminar">
+    <p class="date">{{ seminar.date | date: "%B %-d, %Y"}}</p>
+    <h3>{{ seminar.presenter }}</h3>
+    <p class="affiliation">{{ seminar.affiliation }}</p>
+    <p class="talk-title">{{ seminar.talk_title }}</p>
+    {% if page.layout == "previous" -%}
+        <p><a href="#">Watch recording</a></p>
+    {% endif %}
+</article>
