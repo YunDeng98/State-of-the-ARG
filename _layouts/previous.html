@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previous seminars | State-of-the-ARG</title>
+    <meta name="description" content="Archive of previous State-of-the-ARG seminars and recordings.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    {%- include header.html -%}
+
+    <main class="container">
+        
+        <section class="intro">
+            <p>
+                Recordings and information from previous State-of-the-ARG seminars.
+            </p>
+        </section>
+
+        <section>
+            <h2>Previous seminars</h2>
+            {% assign sorted_seminars = site.data.seminars | sort: "date" | reverse %}
+            {% assign current_date = "now" | date: "%Y%m%d" | plus: 0 %}
+            {% for seminar in sorted_seminars %}
+                {% assign seminar_date = seminar.date | date: "%Y%m%d" | plus: 0 %}
+                {% if seminar_date < current_date %}
+                    {%- include seminar.html -%}
+                {% endif %}
+            {% endfor %}
+        </section>
+
+        <section>
+            <h2>tskit online seminar archive</h2>
+            <p>
+                If you want to preserve the history of the predecessor series, you can
+                either list those talks here or link to the existing tskit seminar archive.
+            </p>
+            <p>
+                <a href="#">tskit online seminar archive</a>
+            </p>
+        </section>
+        
+    </main>
+
+    {%- include footer.html -%}
+
+</body>

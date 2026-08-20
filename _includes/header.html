@@ -1,0 +1,15 @@
+<header class="site-header">
+    <div class="container">
+        <h1>State-of-the-ARG</h1>
+        <p class="subtitle">An online seminar on ancestral recombination graphs</p>
+        <nav>
+            {% if page.layout == "index" -%}
+                <a class="active" href="index.html">Upcoming seminars</a>
+                <a href="previous.html">Previous seminars</a>
+            {% elsif page.layout == "previous" -%}
+                <a href="index.html">Upcoming seminars</a>
+                <a class="active" href="previous.html">Previous seminars</a>
+            {% endif %}
+        </nav>
+    </div>
+</header>

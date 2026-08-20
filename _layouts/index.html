@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State-of-the-ARG</title>
+    <meta name="description" content="State-of-the-ARG is an online seminar series on ancestral recombination graphs.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    {%- include header.html -%}
+
+    <main class="container">
+        
+        <section class="intro">
+            <p>
+                <strong>State-of-the-ARG</strong> is an online seminar series covering
+                methodological developments and applications of ancestral recombination
+                graphs (ARGs). It is the successor to the tskit online seminar series.
+            </p>
+            <p>
+                Talks are held online and are open to everyone. Details and joining
+                information for upcoming seminars are posted below.
+            </p>
+        </section>
+
+        <section>
+            <h2>Upcoming seminars</h2>
+            {% assign sorted_seminars = site.data.seminars | sort: "date" %}
+            {% assign current_date = "now" | date: "%Y%m%d" | plus: 0 %}
+            {% for seminar in sorted_seminars %}
+                {% assign seminar_date = seminar.date | date: "%Y%m%d" | plus: 0 %}
+                {% if seminar_date >= current_date %}
+                    {%- include seminar.html -%}
+                {% endif %}
+            {% endfor %}
+        </section>
+
+        <section>
+            <h2>About the series</h2>
+            <p>
+                State-of-the-ARG continues the community-focused spirit of the
+                <strong>tskit online seminar</strong>, bringing together researchers
+                working on genealogical methods, population genetics, evolutionary
+                genomics, and related applications.
+            </p>
+        </section>
+
+    </main>
+
+    {%- include footer.html -%}
+
+</body>
