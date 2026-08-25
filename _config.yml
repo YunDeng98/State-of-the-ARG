@@ -10,6 +10,9 @@ minimal_mistakes_skin: "dark"
 search: false
 markdown: kramdown
 
+include:
+  - _pages
+
 plugins:
   - jekyll-include-cache
   - jekyll-sitemap
