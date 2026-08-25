@@ -1,0 +1,9 @@
+main:
+  - title: "Home"
+    url: /State-of-the-ARG/
+
+  - title: "Upcoming Seminars"
+    url: /State-of-the-ARG/upcoming/
+
+  - title: "Previous Seminars"
+    url: /State-of-the-ARG/previous/
