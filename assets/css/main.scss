@@ -1,0 +1,66 @@
+---
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+.seminar-card {
+  margin: 1.5rem 0;
+  border: 1px solid #555;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.seminar-header {
+  display: grid;
+  grid-template-columns: 1.1fr 2.6fr 0.8fr;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1rem 1.2rem;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.seminar-speaker h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.seminar-speaker p {
+  margin: 0.15rem 0 0;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.seminar-title {
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.seminar-date {
+  text-align: right;
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+
+.seminar-description {
+  padding: 1rem 1.2rem;
+  line-height: 1.55;
+  border-top: 1px solid #555;
+}
+
+.seminar-links {
+  padding: 0 1.2rem 1rem;
+}
+
+@media (max-width: 768px) {
+  .seminar-header {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .seminar-date {
+    text-align: left;
+  }
+}
