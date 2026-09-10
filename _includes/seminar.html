@@ -1,9 +1,32 @@
-<article class="seminar">
-    <p class="date">{{ seminar.date | date: "%B %-d, %Y"}}</p>
-    <h3>{{ seminar.presenter }}</h3>
-    <p class="affiliation">{{ seminar.affiliation }}</p>
-    <p class="talk-title">{{ seminar.talk_title }}</p>
-    {% if page.layout == "previous" -%}
-        <p><a href="#">Watch recording</a></p>
-    {% endif %}
+<article class="seminar-card">
+
+  <div class="seminar-header">
+
+    <div class="seminar-speaker">
+      <h3>{{ seminar.presenter }}</h3>
+      <p>{{ seminar.affiliation }}</p>
+    </div>
+
+    <div class="seminar-title">
+      {{ seminar.talk_title }}
+    </div>
+
+    <div class="seminar-date">
+      {{ seminar.date | date: "%B %-d, %Y" }}
+    </div>
+
+  </div>
+
+  {% if seminar.description and seminar.description != "" %}
+  <div class="seminar-description">
+    {{ seminar.description }}
+  </div>
+  {% endif %}
+
+  {% if seminar.recording_link and seminar.recording_link != "" %}
+  <div class="seminar-links">
+    <a href="{{ seminar.recording_link }}">Watch recording</a>
+  </div>
+  {% endif %}
+
 </article>

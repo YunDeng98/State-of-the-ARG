@@ -1,0 +1,9 @@
+main:
+  - title: "Home"
+    url: /
+
+  - title: "Upcoming Seminars"
+    url: /upcoming/
+
+  - title: "Previous Seminars"
+    url: /previous/
