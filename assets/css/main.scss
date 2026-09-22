@@ -79,12 +79,24 @@
 }
 
 .home-logo {
-  margin: 1.5rem 0 3rem;
+  margin: 2rem 0 3.5rem;
 }
 
 .home-logo img {
   display: block;
-  width: 65%;
-  max-width: 850px;
+  width: 50%;
+  max-width: 700px;
+  min-width: 500px;
   height: auto;
+}
+
+@media (max-width: 768px) {
+  .home-logo {
+    margin: 1.5rem 0 2.5rem;
+  }
+
+  .home-logo img {
+    width: 100%;
+    min-width: 0;
+  }
 }
