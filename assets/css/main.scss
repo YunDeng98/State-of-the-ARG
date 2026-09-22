@@ -79,15 +79,35 @@
 }
 
 .greedy-nav .site-title {
-  display: none;
+  display: none !important;
 }
 
+/* Give the logo some space from the navigation */
+.greedy-nav .site-logo {
+  margin-right: 2rem;
+}
+
+/* Make the logo substantially larger */
 .greedy-nav .site-logo img {
-  max-height: 5.5rem;
-  width: auto;
+  max-height: none !important;
+  height: 7rem !important;
+  width: auto !important;
+  object-fit: contain;
 }
 
+/* Allow the masthead to grow with the logo */
 .masthead__inner-wrap {
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
+}
+
+/* Slightly smaller logo on phones */
+@media (max-width: 768px) {
+  .greedy-nav .site-logo img {
+    height: 4.5rem !important;
+  }
+
+  .greedy-nav .site-logo {
+    margin-right: 0.75rem;
+  }
 }
