@@ -22,6 +22,18 @@
   background: rgba(255, 255, 255, 0.04);
 }
 
+.seminar-header--with-photo {
+  grid-template-columns: 110px 1.1fr 2.6fr 0.8fr;
+}
+
+.seminar-photo img {
+  display: block;
+  width: 96px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
 .seminar-speaker h3 {
   margin: 0;
   font-size: 1rem;
@@ -55,9 +67,15 @@
 }
 
 @media (max-width: 768px) {
-  .seminar-header {
+  .seminar-header,
+  .seminar-header--with-photo {
     grid-template-columns: 1fr;
     gap: 0.6rem;
+  }
+
+  .seminar-photo img {
+    width: 110px;
+    height: 125px;
   }
 
   .seminar-date {
