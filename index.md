@@ -1,6 +1,5 @@
 ---
 layout: single
-title: "State of the ARG"
 permalink: /
 author_profile: false
 classes: wide
