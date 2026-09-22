@@ -1,6 +1,12 @@
 <article class="seminar-card">
 
-  <div class="seminar-header">
+  <div class="seminar-header{% if seminar.photo and seminar.photo != "" %} seminar-header--with-photo{% endif %}">
+
+    {% if seminar.photo and seminar.photo != "" %}
+    <div class="seminar-photo">
+      <img src="{{ seminar.photo }}" alt="{{ seminar.presenter }}">
+    </div>
+    {% endif %}
 
     <div class="seminar-speaker">
       <h3>{{ seminar.presenter }}</h3>
