@@ -6,6 +6,11 @@ author_profile: false
 classes: wide
 ---
 
+<div class="home-logo">
+  <img src="{{ '/assets/images/state_of_the_arg_color_v3.png' | relative_url }}"
+       alt="State of the ARG">
+</div>
+
 State-of-the-ARG is an online seminar series on advances in computational population genomics, with a particular focus on Ancestral Recombination Graphs (ARGs). The series brings together researchers developing new computational and statistical methods and applying them to questions in population genetics, statistical genetics, evolutionary biology, and related fields. 
 
 State-of-the-ARG was initially established by core developers of [tskit](https://tskit.dev/) as a forum for exchanging ideas and discussing advances in genealogical methods for population genomics. It has since grown into a broader seminar series bringing together researchers developing and applying ARG-based methods.
