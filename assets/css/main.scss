@@ -78,7 +78,16 @@
   margin-right: auto;
 }
 
+/* Larger site title in the masthead */
+.greedy-nav .site-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+/* Centered homepage logo */
 .home-logo {
+  display: flex;
+  justify-content: center;
   margin: 2rem 0 3.5rem;
 }
 
@@ -91,6 +100,10 @@
 }
 
 @media (max-width: 768px) {
+  .greedy-nav .site-title {
+    font-size: 1.15rem;
+  }
+
   .home-logo {
     margin: 1.5rem 0 2.5rem;
   }
