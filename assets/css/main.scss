@@ -6,6 +6,10 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
 
+p>a, p>a:visited {
+  color: #1c75bc;
+}
+
 .seminar-card {
   margin: 1.5rem 0;
   border: 1px solid #555;
@@ -101,7 +105,7 @@
 .masthead .site-title,
 .greedy-nav .site-title {
   font-size: 1.7rem !important;
-  font-weight: 700;
+  color: #3d4144;
 }
 
 /* Centered homepage logo */
@@ -135,4 +139,8 @@
     width: 100%;
     min-width: 0;
   }
+}
+
+.page__footer {
+  display: none;
 }
