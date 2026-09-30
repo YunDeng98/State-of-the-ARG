@@ -10,6 +10,10 @@ p>a, p>a:visited {
   color: #1c75bc;
 }
 
+p>a:hover {
+  color: mix(#FFFFFF, #1c75bc, 80%);
+}
+
 .seminar-card {
   margin: 1.5rem 0;
   border: 1px solid #555;
