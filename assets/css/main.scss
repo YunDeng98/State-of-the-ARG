@@ -105,7 +105,25 @@ p>a, p>a:visited {
 .masthead .site-title,
 .greedy-nav .site-title {
   font-size: 1.7rem !important;
+}
+
+.site-title-custom {
   color: #3d4144;
+}
+
+.site-title-custom:hover {
+  color: mix(#FFFFFF, #3d4144, 80%);
+  .site-title-custom-ARG {
+    color: mix(#FFFFFF, #1c75bc, 80%);
+  }
+}
+
+.site-title-custom-ARG {
+  color: #1c75bc;
+}
+
+.site-title-custom-ARG:hover {
+  color: mix(#FFFFFF, #1c75bc, 80%);
 }
 
 /* Centered homepage logo */
