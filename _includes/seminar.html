@@ -8,12 +8,17 @@
 <p>{{ seminar.affiliation }}</p>
 </div>
 <div class="seminar-title">{{ seminar.talk_title }}</div>
-<div class="seminar-date">{{ seminar.date | date: "%B %-d, %Y" }}</div>
+<div class="seminar-date">
+    {{ seminar.date | date: "%B %-d, %Y" }}
+    {% if include.next_up %}
+        <p style="margin: 0;"><a href="#">JOIN LIVESTREAM</a></p>
+    {% endif %}
+</div>
 </div>
 {% if seminar.description and seminar.description != "" %}
-<div class="seminar-description">{{ seminar.description }}</div>
+    <div class="seminar-description">{{ seminar.description }}</div>
 {% endif %}
 {% if seminar.recording_link and seminar.recording_link != "" %}
-<div class="seminar-links"><a href="{{ seminar.recording_link }}">Watch recording</a></div>
+    <div class="seminar-links"><a href="{{ seminar.recording_link }}">Watch recording</a></div>
 {% endif %}
 </article>
