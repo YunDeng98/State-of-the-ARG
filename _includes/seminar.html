@@ -7,7 +7,12 @@
 <h3>{{ seminar.presenter }}</h3>
 <p>{{ seminar.affiliation }}</p>
 </div>
-<div class="seminar-title">{{ seminar.talk_title }}</div>
+<div class="seminar-title">
+{{ seminar.talk_title }}
+{% if seminar.paper_link and seminar.paper_link != "" %}
+<div class="seminar-paper-link"><a href="{{ seminar.paper_link }}">Paper link</a></div>
+{% endif %}
+</div>
 <div class="seminar-date">
     {{ seminar.date | date: "%B %-d, %Y" }}
     {% if include.next_up %}
