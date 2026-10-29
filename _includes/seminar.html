@@ -9,11 +9,12 @@
 </div>
 <div class="seminar-title">
 {{ seminar.talk_title }}
-{% if seminar.paper_link and seminar.paper_link != "" %}
-<div class="seminar-paper-link"><a href="{{ seminar.paper_link }}">Paper link</a></div>
-{% endif %}
-{% if seminar.recording_link and seminar.recording_link != "" %}
-<div class="seminar-paper-link"><a href="{{ seminar.recording_link }}">Video link</a></div>
+{% if seminar.paper_link and seminar.paper_link != "" or seminar.recording_link and seminar.recording_link != "" %}
+<div class="seminar-paper-link">
+{% if seminar.paper_link and seminar.paper_link != "" %}<a href="{{ seminar.paper_link }}">Paper link</a>{% endif %}
+{% if seminar.paper_link and seminar.paper_link != "" and seminar.recording_link and seminar.recording_link != "" %} &nbsp;·&nbsp; {% endif %}
+{% if seminar.recording_link and seminar.recording_link != "" %}<a href="{{ seminar.recording_link }}">Video link</a>{% endif %}
+</div>
 {% endif %}
 </div>
 <div class="seminar-date">
