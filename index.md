@@ -12,7 +12,7 @@ classes: wide
 
 **STATE OF THE <span style="color:#1c75bc;">ARG</span>** is an online seminar series on advances in computational population genomics, with a particular focus on Ancestral Recombination Graphs (ARGs). The series brings together researchers developing new computational and statistical methods and applying them to questions in population genetics, statistical genetics, evolutionary biology, and related fields.
 
-Seminars take place on **Wednesdays at 08:30 PT / 11:30 ET / 16:30 UK time** during the academic year, from roughly September through June. Our next seminar will be...
+Seminars take place on **Wednesdays at 08:30 PT / 11:30 ET / 16:30 UK time** during the academic year, from roughly September through June. Our next seminar is:
 
 {% assign sorted_seminars = site.data.seminars | sort: "date" %}
 {% assign today = "now" | date: "%Y%m%d" | plus: 0 %}
@@ -35,7 +35,7 @@ Please see the [Upcoming Seminars](/State-of-the-ARG/upcoming/) page for the ful
 
 **STATE OF THE <span style="color:#1c75bc;">ARG</span>** seminars have two formats: **public seminars** and **internal meetings**. Public seminars are open to everyone and are announced on this website; upcoming talks can be found on the [Upcoming Seminars](/State-of-the-ARG/upcoming/) page. Internal meetings are intended for members of the **STATE OF THE <span style="color:#1c75bc;">ARG</span>** community and provide a more informal setting for discussing ongoing work. Recordings of internal meetings may be made publicly available afterward with the speaker's consent. Information about previous seminars can be found on the [Previous Seminars](/State-of-the-ARG/previous/) page.
 
-Origin of the name: The name **STATE OF THE <span style="color:#1c75bc;">ARG</span>** originated from a comment by Prof. Moi Exposito-Alonso during Yun Deng's exit talk at the UC Berkeley Center for Theoretical Evolutionary Genomics (CTEG).
+The name **STATE OF THE <span style="color:#1c75bc;">ARG</span>** originated from a comment by Prof. Moi Exposito-Alonso during Yun Deng's exit talk at the UC Berkeley Center for Theoretical Evolutionary Genomics (CTEG). The seminar logo was designed by James Kitchens.
 
 <br>
 
