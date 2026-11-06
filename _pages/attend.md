@@ -14,7 +14,7 @@ Public **STATE OF THE <span style="color:#1c75bc;">ARG</span>** seminars are ope
 
 Subscribe to the **STATE OF THE <span style="color:#1c75bc;">ARG</span>** mailing list to receive announcements and reminders about upcoming seminars.
 
-<a href="/State-of-the-ARG/mailing-list/" class="btn btn--primary">Mailing list</a>
+[Mailing list](/State-of-the-ARG/mailing-list/)
 
 If you would like to present your work in a future public **STATE OF THE <span style="color:#1c75bc;">ARG</span>** seminar, please complete the Google Form below. We welcome talks on methodological and empirical advances related to ancestral recombination graphs, population genomics, statistical genetics, evolutionary genetics, and related topics.
 
