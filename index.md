@@ -27,6 +27,16 @@ Seminars take place on **Wednesdays at 08:30 PT / 11:30 ET / 16:30 UK time** dur
 
 Please see the [Upcoming Seminars](/State-of-the-ARG/upcoming/) page for the full schedule of upcoming talks.
 
+<div class="mailing-list-callout">
+
+<h2>Stay updated</h2>
+
+Subscribe to the **STATE OF THE <span style="color:#1c75bc;">ARG</span>** mailing list to receive announcements and reminders about upcoming seminars.
+
+[Subscribe to mailing list](https://lists.uoregon.edu/mailman/listinfo/state_of_the_arg){: .btn .btn--primary}
+
+</div>
+
 <br>
 
 <h1>About this seminar series</h1>
