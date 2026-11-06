@@ -10,15 +10,11 @@ Public **STATE OF THE <span style="color:#1c75bc;">ARG</span>** seminars are ope
 
 **Zoom link:** XXX
 
-<div class="mailing-list-callout">
-
-<h2>Stay updated</h2>
+## Stay updated
 
 Subscribe to the **STATE OF THE <span style="color:#1c75bc;">ARG</span>** mailing list to receive announcements and reminders about upcoming seminars.
 
-[Subscribe to mailing list](https://lists.uoregon.edu/mailman/listinfo/state_of_the_arg){: .btn .btn--primary}
-
-</div>
+<a href="/State-of-the-ARG/mailing-list/" class="btn btn--primary">Mailing list</a>
 
 If you would like to present your work in a future public **STATE OF THE <span style="color:#1c75bc;">ARG</span>** seminar, please complete the Google Form below. We welcome talks on methodological and empirical advances related to ancestral recombination graphs, population genomics, statistical genetics, evolutionary genetics, and related topics.
 
