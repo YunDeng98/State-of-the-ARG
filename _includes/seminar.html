@@ -19,8 +19,8 @@
 </div>
 <div class="seminar-date">
     {{ seminar.date | date: "%B %-d, %Y" }}
-    {% if include.next_up %}
-        <p style="margin: 0;"><a href="#">JOIN ZOOM</a></p>
+    {% if include.next_up and seminar.zoom_link and seminar.zoom_link != "" %}
+        <p style="margin: 0;"><a href="{{ seminar.zoom_link }}">JOIN ZOOM</a></p>
     {% endif %}
 </div>
 </div>
