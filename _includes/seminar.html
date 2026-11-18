@@ -9,11 +9,13 @@
 </div>
 <div class="seminar-title">
 {{ seminar.talk_title }}
-{% if seminar.paper_link and seminar.paper_link != "" or seminar.recording_link and seminar.recording_link != "" %}
+{% assign seminar_paper_link = seminar.paper_link | default: "" %}
+{% assign seminar_recording_link = seminar.recording_link | default: "" %}
+{% if seminar_paper_link != "" or seminar_recording_link != "" %}
 <div class="seminar-paper-link">
-{% if seminar.paper_link and seminar.paper_link != "" %}<a href="{{ seminar.paper_link }}">Paper link</a>{% endif %}
-{% if seminar.paper_link and seminar.paper_link != "" and seminar.recording_link and seminar.recording_link != "" %} &nbsp;·&nbsp; {% endif %}
-{% if seminar.recording_link and seminar.recording_link != "" %}<a href="{{ seminar.recording_link }}">Video link</a>{% endif %}
+{% if seminar_paper_link != "" %}<a href="{{ seminar_paper_link }}">Paper link</a>{% endif %}
+{% if seminar_paper_link != "" and seminar_recording_link != "" %} &nbsp;·&nbsp; {% endif %}
+{% if seminar_recording_link != "" %}<a href="{{ seminar_recording_link }}">Video link</a>{% endif %}
 </div>
 {% endif %}
 </div>
