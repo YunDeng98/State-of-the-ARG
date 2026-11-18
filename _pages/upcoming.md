@@ -14,7 +14,7 @@ If you would like to present your work in a future public **STATE OF THE <span s
 {% assign today = "now" | date: "%Y%m%d" | plus: 0 %}
 {% for seminar in sorted_seminars %}
 {% assign seminar_date = seminar.date | date: "%Y%m%d" | plus: 0 %}
-{% if seminar_date >= today %}
+{% if seminar_date >= today and seminar.status != "previous" %}
 {% include seminar.html seminar=seminar next_up=sorted_seminars.first %}
 {% endif %}
 {% endfor %}
