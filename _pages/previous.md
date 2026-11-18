@@ -10,7 +10,9 @@ classes: wide
 {% assign today = "now" | date: "%Y%m%d" | plus: 0 %}
 {% for seminar in sorted_seminars %}
 {% assign seminar_date = seminar.date | date: "%Y%m%d" | plus: 0 %}
-{% if seminar_date < today %}
+{% if seminar.status == "previous" %}
+{% include seminar.html seminar=seminar %}
+{% elsif seminar_date < today %}
 {% include seminar.html seminar=seminar %}
 {% endif %}
 {% endfor %}
