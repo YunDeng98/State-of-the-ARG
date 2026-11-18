@@ -18,7 +18,7 @@ Seminars take place on **Wednesdays at 08:30 PT / 11:30 ET / 16:30 UK time** dur
 {% assign today = "now" | date: "%Y%m%d" | plus: 0 %}
 {% for seminar in sorted_seminars %}
 {% assign seminar_date = seminar.date | date: "%Y%m%d" | plus: 0 %}
-{% if seminar_date >= today %}
+{% if seminar_date >= today and seminar.status != "previous" %}
 {% include seminar.html seminar=seminar next_up=true %}
 {% break %}
 {% endif %}
