@@ -1,7 +1,7 @@
 <article class="seminar-card">
 <div class="seminar-header{% if seminar.photo and seminar.photo != "" %} seminar-header--with-photo{% endif %}">
 {% if seminar.photo and seminar.photo != "" %}
-<div class="seminar-photo"><img src="{{ seminar.photo }}" alt="{{ seminar.presenter }}"></div>
+<div class="seminar-photo">{% if seminar.photo contains "://" %}<img src="{{ seminar.photo }}" alt="{{ seminar.presenter }}">{% else %}<img src="{{ seminar.photo | relative_url }}" alt="{{ seminar.presenter }}">{% endif %}</div>
 {% endif %}
 <div class="seminar-speaker">
 <h3>{{ seminar.presenter }}</h3>
